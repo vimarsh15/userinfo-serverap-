@@ -35,4 +35,7 @@ app.get('/',(req,res)=>{
      res.send('hello')  
 })
 
-app.listen(3200, console.log('server on'))
+
+
+let port = 3200 || process.env.PORT
+app.listen(port, console.log('server on'))
